@@ -1,0 +1,11 @@
+{
+  "name": "my-sahab-module",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --format=iife --outfile=dist/module.js --minify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.0"
+  }
+}

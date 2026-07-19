@@ -1,0 +1,11 @@
+{
+  "modules": [
+    {
+      "id": "apps-sidebar-injector",
+      "name": { "ar": "مُحقّق الشريط الجانبي", "en": "App Sidebar Injector" },
+      "description": { "ar": "يضيف شريطاً جانبياً على صفحات /apps/:tech باستخدام أسماء القوائم الظاهرة بالفعل.", "en": "Adds a left sidebar on /apps/:tech pages using the visible app menu labels." },
+      "version": "1.0.0",
+      "entry": "dist/module.js"
+    }
+  ]
+}

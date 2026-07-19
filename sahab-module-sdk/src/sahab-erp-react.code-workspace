@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "sahab-erp-react",
+			"path": "../../sahab-erp-react"
+		},
+		{
+			"name": "node_modules",
+			"path": "../../../sahab/sahab_erp/frontend/node_modules"
+		}
+	],
+	"settings": {}
+}
