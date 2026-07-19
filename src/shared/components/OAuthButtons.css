@@ -1,0 +1,35 @@
+.oauth {
+  display: flex;
+  gap: 10px;
+}
+
+.gbtn {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.gbtn:hover {
+  background: #f8fafc;
+}
+
+.gbtn svg {
+  flex-shrink: 0;
+  display: block;
+}
+
+.gbtn-github {
+  background: #24292f;
+  color: #fff;
+  border-color: #24292f;
+}

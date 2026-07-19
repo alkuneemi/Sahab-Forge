@@ -1,0 +1,36 @@
+import type { TranslationPack } from "../types";
+
+export const loginDictionary: TranslationPack = {
+  ar: {
+    title: "SAHAB ERP - تسجيل الدخول",
+    login_h: "تسجيل الدخول",
+    tagline: "مكّن أعمالك. بسّط نجاحك.",
+    err_login: "بيانات الدخول غير صحيحة. حاول مرة أخرى.",
+    ok_reg: "تم إنشاء حسابك بنجاح! يمكنك تسجيل الدخول الآن.",
+    email: "البريد الإلكتروني",
+    email_ph: "name@company.com",
+    password: "كلمة المرور",
+    login_btn: "دخول",
+    or: "أو",
+    login_google: "الدخول عبر Google",
+    login_github: "الدخول عبر GitHub",
+    no_acct: "ليس لديك حساب؟",
+    create_acct: "إنشاء حساب",
+  },
+  en: {
+    title: "SAHAB ERP - Login",
+    login_h: "Sign in",
+    tagline: "Empower your business. Simplify your success.",
+    err_login: "Invalid login credentials. Please try again.",
+    ok_reg: "Your account was created successfully! You can sign in now.",
+    email: "Email Address",
+    email_ph: "name@company.com",
+    password: "Password",
+    login_btn: "Sign in",
+    or: "OR",
+    login_google: "Sign in with Google",
+    login_github: "Sign in with GitHub",
+    no_acct: "Do not have an account?",
+    create_acct: "Create account",
+  },
+};

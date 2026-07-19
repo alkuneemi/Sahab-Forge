@@ -1,0 +1,38 @@
+import type { TranslationPack } from "../types";
+
+export const signupDictionary: TranslationPack = {
+  ar: {
+    title: "SAHAB ERP - إنشاء حساب",
+    signup_h: "إنشاء حساب",
+    tagline2: "مكّن مشاريعك. بسّط نجاحك.",
+    err_exists: "هذا البريد الإلكتروني مسجّل بالفعل. جرّب تسجيل الدخول.",
+    full_name: "الاسم الكامل",
+    full_name_ph: "الاسم الكامل",
+    email: "البريد الإلكتروني",
+    email_ph: "name@company.com",
+    password: "كلمة المرور",
+    signup_btn: "إنشاء الحساب",
+    or_signup: "أو أنشئ حساباً عبر",
+    signup_google: "التسجيل عبر Google",
+    signup_github: "التسجيل عبر GitHub",
+    have_acct: "لديك حساب بالفعل؟",
+    login_link: "تسجيل الدخول",
+  },
+  en: {
+    title: "SAHAB ERP - Create account",
+    signup_h: "Create an account",
+    tagline2: "Empower your projects. Simplify your success.",
+    err_exists: "This email is already registered. Try signing in.",
+    full_name: "Full Name",
+    full_name_ph: "Full name",
+    email: "Email Address",
+    email_ph: "name@company.com",
+    password: "Password",
+    signup_btn: "Create account",
+    or_signup: "Or sign up with",
+    signup_google: "Sign up with Google",
+    signup_github: "Sign up with GitHub",
+    have_acct: "Already have an account?",
+    login_link: "Sign in",
+  },
+};

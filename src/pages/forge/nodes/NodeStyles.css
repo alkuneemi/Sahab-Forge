@@ -1,0 +1,210 @@
+/* Sahab Forge Node Styles - Isolated namespace */
+
+.sahab-forge-node {
+  min-width: 180px;
+  background: white;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sahab-forge-node.selected {
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+  border-color: #2196f3;
+}
+
+.sahab-forge-node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #eeeeee 100%);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sahab-forge-node-icon {
+  font-size: 16px;
+}
+
+.sahab-forge-node-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #424242;
+}
+
+.sahab-forge-node-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sahab-forge-node-label {
+  font-size: 12px;
+  color: #616161;
+  word-break: break-word;
+}
+
+.sahab-forge-handle {
+  background: #2196f3;
+  border: 2px solid white;
+}
+
+.sahab-forge-node-delete {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sahab-forge-inline-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  background: #f7faff;
+  border: 1px solid #e0e0e0;
+}
+
+.sahab-forge-inline-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #5c6bc0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sahab-forge-inline-editor input,
+.sahab-forge-inline-editor select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  font-size: 11px;
+  box-sizing: border-box;
+}
+
+.sahab-forge-inline-btn {
+  align-self: flex-end;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #2196f3;
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+/* Start Node */
+.sahab-forge-node-start {
+  border-color: #4caf50;
+}
+
+.sahab-forge-node-start .sahab-forge-node-header {
+  background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+}
+
+/* Model Node */
+.sahab-forge-node-model {
+  border-color: #2196f3;
+}
+
+.sahab-forge-node-model .sahab-forge-node-header {
+  background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%);
+}
+
+.sahab-forge-model-fields {
+  font-size: 11px;
+  color: #424242;
+}
+
+.sahab-forge-field-item {
+  padding: 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sahab-forge-field-more {
+  font-size: 10px;
+  color: #888;
+  padding-top: 4px;
+}
+
+/* View Node */
+.sahab-forge-node-view {
+  border-color: #ff9800;
+}
+
+.sahab-forge-node-view .sahab-forge-node-header {
+  background: linear-gradient(135deg, #ffe0b2 0%, #ffcc80 100%);
+}
+
+.sahab-forge-view-type {
+  font-size: 11px;
+  color: #e65100;
+  padding-top: 4px;
+}
+
+/* Action Node */
+.sahab-forge-node-action {
+  border-color: #f44336;
+}
+
+.sahab-forge-node-action .sahab-forge-node-header {
+  background: linear-gradient(135deg, #ffcdd2 0%, #ef9a9a 100%);
+}
+
+.sahab-forge-action-type {
+  font-size: 11px;
+  color: #c62828;
+  padding-top: 4px;
+}
+
+/* State Node */
+.sahab-forge-node-state {
+  border-color: #9c27b0;
+}
+
+.sahab-forge-node-state .sahab-forge-node-header {
+  background: linear-gradient(135deg, #e1bee7 0%, #ce93d8 100%);
+}
+
+.sahab-forge-state-list {
+  font-size: 11px;
+  color: #424242;
+}
+
+.sahab-forge-state-item {
+  padding: 2px 0;
+}
+
+.sahab-forge-state-more {
+  font-size: 10px;
+  color: #888;
+  padding-top: 4px;
+}
+
+/* External API Node */
+.sahab-forge-node-external {
+  border-color: #00bcd4;
+}
+
+.sahab-forge-node-external .sahab-forge-node-header {
+  background: linear-gradient(135deg, #b2ebf2 0%, #80deea 100%);
+}
+
+.sahab-forge-api-endpoint {
+  font-size: 10px;
+  color: #00838f;
+  padding-top: 4px;
+  font-family: monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

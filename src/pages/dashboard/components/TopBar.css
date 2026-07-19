@@ -1,0 +1,88 @@
+.dash-top {
+  height: 52px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border-brand);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.dash-top-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobtn {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-soft);
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobtn:hover {
+  background: var(--color-bg);
+}
+
+.mobtn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.dash-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 15px;
+  color: #1e3a8a;
+}
+
+.dash-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dash-logo img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.dash-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--color-text-soft);
+}
+
+.dash-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary-soft), var(--color-primary));
+}
+
+@media (max-width: 900px) {
+  .mobtn {
+    display: flex;
+  }
+}

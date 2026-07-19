@@ -1,0 +1,97 @@
+.rep-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.rep-modal.show {
+  display: flex;
+}
+
+.rep-modal-card {
+  background: var(--color-surface);
+  border-radius: 18px;
+  width: 100%;
+  max-width: 880px;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.4);
+}
+
+.rep-modal-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.rep-modal-head b {
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.rep-modal-actions {
+  margin-inline-start: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.rep-modal-actions button {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#repPrint {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+}
+
+#repClose {
+  background: var(--color-bg);
+  color: var(--color-text-soft);
+}
+
+.rep-modal-body {
+  padding: 18px;
+  overflow-y: auto;
+  background: var(--color-surface);
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  .rep-modal,
+  .rep-modal * {
+    visibility: visible !important;
+  }
+  .rep-modal {
+    position: absolute !important;
+    inset: 0 !important;
+    background: #fff !important;
+    display: block !important;
+    padding: 0 !important;
+  }
+  .rep-modal-card {
+    max-width: none !important;
+    max-height: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  .rep-modal-actions {
+    display: none !important;
+  }
+}

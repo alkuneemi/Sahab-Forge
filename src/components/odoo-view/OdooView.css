@@ -1,0 +1,140 @@
+.odoo-list-wrap {
+  overflow: auto;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 12px;
+  background: var(--color-surface);
+}
+
+.odoo-list {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.odoo-list th {
+  text-align: start;
+  background: var(--color-bg);
+  padding: 10px 12px;
+  font-weight: 700;
+  color: var(--color-text-soft);
+  position: sticky;
+  top: 0;
+}
+
+.odoo-list td {
+  padding: 9px 12px;
+  border-top: 1px solid var(--color-border-soft);
+  color: var(--color-text);
+}
+
+.odoo-list tr.clickable {
+  cursor: pointer;
+}
+.odoo-list tr.clickable:hover td {
+  background: var(--color-bg);
+}
+
+.odoo-list-empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+/* Form view */
+.odoo-form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.odoo-sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.odoo-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 6px 24px;
+}
+
+.odoo-field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.odoo-field-label {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.odoo-field-value {
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.odoo-req {
+  color: #ef4444;
+}
+
+.odoo-separator {
+  margin-top: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.odoo-label {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.odoo-btn {
+  border: 1px solid var(--color-border-brand);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  padding: 7px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-inline-end: 8px;
+}
+.odoo-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.odoo-notebook {
+  margin-top: 12px;
+}
+
+.odoo-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 12px;
+}
+
+.odoo-tab {
+  border: none;
+  background: transparent;
+  padding: 9px 14px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.odoo-tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: 700;
+}

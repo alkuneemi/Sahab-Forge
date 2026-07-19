@@ -1,0 +1,83 @@
+/* =========================================================================
+   SAHAB ERP — Global design tokens
+   ---------------------------------------------------------------------
+   These CSS custom properties are the single source of truth for colors,
+   radii and shadows across the whole app. A module can re-theme the
+   entire product by injecting a <style> tag (see core/modules) that
+   redeclares any of these variables with higher priority (later in the
+   <head>). Removing that <style> tag instantly restores these defaults —
+   that is the "install / uninstall" inheritance mechanism.
+   ========================================================================= */
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-soft: #60a5fa;
+  --color-accent-1: #8b5cf6;
+  --color-accent-2: #38bdf8;
+  --color-accent-3: #ec4899;
+
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-text-soft: #334155;
+  --color-border: #e2e8f0;
+  --color-border-soft: #eef2ff;
+  --color-border-brand: #e5edff;
+
+  --color-bg: #f1f5f9;
+  --color-surface: #ffffff;
+
+  --color-success-bg: #f0fdf4;
+  --color-success-text: #166534;
+  --color-error-bg: #fef2f2;
+  --color-error-text: #b91c1c;
+
+  --radius-shell: 28px;
+  --radius-frame: 26px;
+  --radius-card: 22px;
+  --radius-md: 12px;
+  --radius-sm: 10px;
+
+  --shadow-shell: 0 30px 80px rgba(30, 64, 175, 0.18);
+  --shadow-frame: 0 30px 80px rgba(30, 64, 175, 0.3);
+  --shadow-card: 0 12px 40px rgba(30, 64, 175, 0.1);
+
+  --font-family: "Cairo", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* Utility used by every screen that sits inside the frosted "sky" frame */
+.sky-page {
+  min-height: 100vh;
+  background-image: var(--sky-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

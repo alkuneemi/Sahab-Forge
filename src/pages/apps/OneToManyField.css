@@ -1,0 +1,61 @@
+.o2m-box {
+  grid-column: 1 / -1;
+}
+.o2m-tablewrap {
+  border: 1px solid var(--color-border-soft);
+  border-radius: 12px;
+  overflow: auto;
+  background: var(--color-surface);
+}
+.o2m-tablewrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.o2m-tablewrap th {
+  background: var(--color-bg);
+  text-align: start;
+  padding: 8px 10px;
+  font-weight: 700;
+  color: var(--color-text-soft);
+  white-space: nowrap;
+}
+.o2m-tablewrap td {
+  padding: 8px 10px;
+  border-top: 1px solid var(--color-border-soft);
+}
+.o2m-tablewrap tr.clickable {
+  cursor: pointer;
+}
+.o2m-tablewrap tr.clickable:hover td {
+  background: var(--color-bg);
+}
+.o2m-empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 16px !important;
+}
+.o2m-actcol {
+  width: 36px;
+}
+.o2m-del {
+  border: none;
+  background: transparent;
+  color: #b91c1c;
+  cursor: pointer;
+  font-size: 13px;
+}
+.o2m-add {
+  margin-top: 8px;
+  border: 1px dashed var(--color-border);
+  background: transparent;
+  color: var(--color-primary);
+  border-radius: 9px;
+  padding: 7px 14px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.o2m-add:hover {
+  background: var(--color-bg);
+}
